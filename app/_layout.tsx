@@ -19,7 +19,17 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
+      <Stack
+        screenOptions={{
+          animation: 'fade', // Subtle fade animation for all transitions
+        }}
+      >
+        <Stack.Screen name="screens/Onboarding" options={{ headerShown: false }} />
+        <Stack.Screen name="screens/Signin" options={{ headerShown: false }} />
+        <Stack.Screen name="screens/Signup" options={{ headerShown: false }} />
+        <Stack.Screen name="screens/Home" options={{ headerShown: false }} />
+        <Stack.Screen name="screens/Flights" options={{ headerShown: false }} />
+        <Stack.Screen name="screens/Settings" options={{ headerShown: false }} />
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
       </Stack>
