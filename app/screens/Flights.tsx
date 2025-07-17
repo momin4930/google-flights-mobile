@@ -24,7 +24,7 @@ const BUTTON_BG = '#1e3c72';
 const BUTTON_TEXT = '#e6f0fa';
 const PLACEHOLDER_COLOR = '#7a8fa6';
 
-// --- Sky-Scrapper API constants (commented out) ---
+// --- Sky-Scrapper API constants  ---
 // const API_URL = 'https://sky-scrapper.p.rapidapi.com/api/v1/flights/searchFlights';
 // const AIRPORT_API_URL = 'https://sky-scrapper.p.rapidapi.com/api/v1/flights/searchAirport';
 
@@ -105,7 +105,7 @@ const Flights = () => {
     return data.access_token;
   };
 
-  // --- Helper: Get valid token (refresh if needed) ---
+  // --- Helper: Get valid token  ---
   const getValidAmadeusToken = async () => {
     if (amadeusToken && tokenExpiry && Date.now() < tokenExpiry) {
       return amadeusToken;
@@ -113,7 +113,7 @@ const Flights = () => {
     return await fetchAmadeusToken();
   };
 
-  // --- Old getCityAirportInfo (commented out) ---
+  // --- Old getCityAirportInfo  ---
   /*
   const getCityAirportInfo = async (city: string) => {
     const params = new URLSearchParams({ query: city });
@@ -212,7 +212,7 @@ const Flights = () => {
   const [originAirports, setOriginAirports] = useState<string[]>([]);
   const [destinationAirports, setDestinationAirports] = useState<string[]>([]);
 
-  // --- Old: onSearch (commented out) ---
+  // --- Old: onSearch  ---
   /*
   const onSearch = async () => {
     setSearching(true);

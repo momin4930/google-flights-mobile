@@ -75,13 +75,7 @@ npx expo start
 
 ---
 
-## 🧩 Customization
 
-- **Splash Screen:** Edit `app.json` and replace `assets/images/app-icon.png`.
-- **Gradient Colors:** Change gradient colors in `app/screens/Home.tsx` and `app/screens/Onboarding.tsx`.
-- **Featured Destinations:** Update content in `Home.tsx`.
-
----
 
 
 <p align="center">
