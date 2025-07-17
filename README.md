@@ -1,50 +1,89 @@
-# Welcome to your Expo app 👋
+# ✈️ Google Flights Mobile
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A beautiful, cross-platform mobile app to search, compare, and explore flights—built with Expo, React Native, and a modern, animated UI.
 
-## Get started
+---
 
-1. Install dependencies
+<p align="center">
+  <img src="./assets/images/app-icon.png" alt="App Icon" width="120" />
+</p>
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 🚀 Features
 
-   ```bash
-   npx expo start
-   ```
+- **Stunning Gradient UI:** Modern, animated backgrounds and splash screens for a delightful user experience.
+- **Onboarding & Authentication:** Smooth onboarding flow, sign up, and sign in with persistent user storage.
+- **Flight Search:** Search for flights using the Amadeus API (or Sky-Scrapper API, see code comments).
+- **Explore Destinations:** Discover featured cities and travel inspiration.
+- **Lottie Animations:** Engaging, animated visuals throughout the app.
+- **Custom Bottom Navigation:** Blurred, themed navigation bar for easy access.
+- **Dark & Light Mode:** Automatic theme switching based on system settings.
+- **Cross-Platform:** Runs on Android, iOS, and Web with responsive layouts.
 
-In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 📝 Project Structure
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+app/                # Main app screens and navigation
+  (tabs)/           # Tabbed navigation screens (Home, Explore, Flights)
+  screens/          # Standalone screens (Onboarding, Signin, Signup, etc.)
+  _layout.tsx       # Root layout and navigation stack
+components/         # Reusable UI components
+constants/          # Theme and color constants
+assets/             # Images, fonts, Lottie files
+hooks/              # Custom React hooks
+scripts/            # Utility scripts (e.g., reset-project.js)
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🛠️ Tech Stack
 
-To learn more about developing your project with Expo, look at the following resources:
+- [Expo](https://expo.dev/) (with expo-router)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Lottie](https://airbnb.io/lottie/#/)
+- [Amadeus API](https://developers.amadeus.com/) (for flight data)
+- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/) (for user data)
+- [Expo Linear Gradient](https://docs.expo.dev/versions/latest/sdk/linear-gradient/)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## ⚡ Getting Started
 
-Join our community of developers creating universal apps.
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### Installation
+
+```bash
+npm install
+```
+
+### Running the App
+
+```bash
+npx expo start
+```
+
+- Open in Expo Go, Android/iOS simulator, or web browser.
+
+---
+
+## 🧩 Customization
+
+- **Splash Screen:** Edit `app.json` and replace `assets/images/app-icon.png`.
+- **Gradient Colors:** Change gradient colors in `app/screens/Home.tsx` and `app/screens/Onboarding.tsx`.
+- **Featured Destinations:** Update content in `Home.tsx`.
+
+---
+
+
+<p align="center">
+  <b>Happy travels! 🌍</b>
+</p>
