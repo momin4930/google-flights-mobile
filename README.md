@@ -14,7 +14,7 @@ A beautiful, cross-platform mobile app to search, compare, and explore flightsâ€
 
 - **Stunning Gradient UI:** Modern, animated backgrounds and splash screens for a delightful user experience.
 - **Onboarding & Authentication:** Smooth onboarding flow, sign up, and sign in with persistent user storage.
-- **Flight Search:** Search for flights using the Amadeus API (or Sky-Scrapper API, see code comments).
+- **Flight Search:** Search for flights using the Amadeus API (Sky-Scrapper API's problem was addressed but got no response).
 - **Explore Destinations:** Discover featured cities and travel inspiration.
 - **Lottie Animations:** Engaging, animated visuals throughout the app.
 - **Custom Bottom Navigation:** Blurred, themed navigation bar for easy access.
